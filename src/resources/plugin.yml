@@ -1,0 +1,10 @@
+author: ZephireNZ
+database: false
+main: me.ZephireNZ.JumpPads.JumpPads
+name: JumpPads
+startup: postworld
+version: ${version}
+permissions:
+    jumppads.create:
+        description: Allows the creation of JumpPads.
+        default: op
