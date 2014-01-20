@@ -3,7 +3,7 @@
     <groupId>me.ZephireNZ</groupId>
     <artifactId>JumpPads</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.1</version>
     <name>JumpPads</name>
 
     <repositories>
