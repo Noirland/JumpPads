@@ -29,8 +29,6 @@ public class JumpPads extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
-
-
     }
 
     @Override
@@ -48,6 +46,7 @@ public class JumpPads extends JavaPlugin implements Listener {
         if (blockUnder.getType() != Material.GOLD_BLOCK) return;
 
         Sign s = checkForJumpSign(blockUnder);
+        if(s == null) return;
         JumpPadData data = parseSign(s);
         jump(event.getPlayer(), data);
     }
@@ -62,6 +61,7 @@ public class JumpPads extends JavaPlugin implements Listener {
         if (blockUnder.getType() != Material.GOLD_BLOCK) return;
 
         Sign s = checkForJumpSign(blockUnder);
+        if(s == null) return;
         JumpPadData data = parseSign(s);
         jump(event.getEntity(), data);
     }
