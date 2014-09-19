@@ -3,7 +3,7 @@
     <groupId>me.ZephireNZ</groupId>
     <artifactId>JumpPads</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.1</version>
+    <version>1.2-SNAPSHOT</version>
     <name>JumpPads</name>
 
     <repositories>
@@ -11,19 +11,15 @@
             <id>bukkit-repo</id>
             <url>http://repo.bukkit.org/content/groups/public</url>
         </repository>
-        <repository>
-            <id>brynley-repo</id>
-            <url>http://repo.arcadium.net.nz/content/groups/public</url>
-        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.7.2-R0.2-SNAPSHOT</version>
+            <version>LATEST</version>
             <type>jar</type>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -47,17 +43,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>brynley-repo</id>
-            <name>Releases</name>
-            <url>http://repo.arcadium.net.nz/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>brynley-repo</id>
-            <name>Snapshots</name>
-            <url>http://repo.arcadium.net.nz/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
